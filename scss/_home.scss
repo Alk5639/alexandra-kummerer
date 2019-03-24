@@ -1,0 +1,36 @@
+
+
+section[class^="section-"]:not(:last-child) {
+    @include skew-section; 
+}
+
+.section-projects {
+    max-width: 100vw; 
+
+    @include media-breakpoint-up(md) {
+        &__composition {
+            div[class^="col"] {
+                &:nth-of-type(3n) {
+                    transform: translateY(-4rem); 
+                }
+                &:nth-of-type(2n) {
+                    transform: translateY(4rem); 
+                }
+                &:first-of-type {
+                    transform: translateX(8.5rem); 
+                }
+            }
+        }
+    }
+
+    &__composition img {
+        transition: all 0.5s ease-in-out; 
+        @include media-breakpoint-up(md) {
+            width: 75% !important; 
+        }
+
+        &:hover {
+            transform: scale(1.01); 
+        }
+    }
+}

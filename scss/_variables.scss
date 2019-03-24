@@ -1,0 +1,12 @@
+$skew-angle: 2deg; 
+$side-bar-width: 15rem; 
+$font-heading: 'Raleway', sans-serif;
+
+@mixin skew-section {
+    margin-top: -1px; 
+    transform: translate3d( 0, 0, 0) skewY(-$skew-angle); 
+
+    & > * {
+        transform: translate3d( 0, 0, 0) skewY($skew-angle); 
+    }
+}
