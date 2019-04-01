@@ -1,54 +1,50 @@
 .viewport-100 {
-    min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .viewport-35 {
-    min-height: 35vh; 
+  min-height: 35vh;
 }
 
 .side-nav {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    transition: all 0.5s ease-in-out; 
-    overflow-wrap: break-word; 
-    padding-top: 4rem; 
-    height: 100%; 
-    width: $side-bar-width; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  overflow-wrap: break-word;
+  padding-top: 4rem;
+  height: 100%;
+  width: $side-bar-width;
 
-    a.list-group-item.active {
-        background: none; 
-        color: $primary;
-        font-weight: 700; 
-        letter-spacing: 0.02rem; 
-    }
+  a.list-group-item.active {
+    background: none;
+    color: $primary;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+  }
 }
 
 .side-nav-container {
-    ul a {
-        border: none !important; 
-        padding-bottom: 0; 
-    }
+  ul a {
+    border: none !important;
+    padding-bottom: 0;
+  }
 }
 
 .side-nav-main {
-    @include media-breakpoint-up(md) {
-        margin-left: $side-bar-width; 
-    }
+  @include media-breakpoint-up(md) {
+    margin-left: $side-bar-width;
+  }
 }
 
 .footer {
-    position: relative;
-    max-width: 100vw; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
+  position: relative;
+  max-width: 100vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-// TEMP
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
+.vh-100 {
+  min-height: 100vh;
 }

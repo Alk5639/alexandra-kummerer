@@ -1,7 +1,11 @@
-.navbar {
-    box-shadow: 0 4px 2px -2px $primary;
+.navbar-underline {
+  box-shadow: 0 4px 2px -2px $secondary;
 }
 
 .side-nav-container {
-    line-height: 1;
+  line-height: 1;
+}
+
+.active {
+  color: $dark !important;
 }

@@ -60,3 +60,4 @@ typings/
 # ADDED BY NATE
 # uncompressed images
 images/uncompressed
+.DS_Store

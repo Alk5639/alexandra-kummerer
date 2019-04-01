@@ -1,84 +1,100 @@
 .header {
-    
+  @include media-breakpoint-down(md) {
+    padding-top: 2rem !important;
+  }
+
+  &__name {
+    animation: flyInRight 1s ease-in-out;
+
     @include media-breakpoint-down(md) {
-        padding-top: 2rem !important; 
+      font-size: 4.2rem !important;
     }
 
-    &__name {
-        animation: flyInRight 1s ease-in-out; 
-
-        @include media-breakpoint-down(md) {
-            font-size: 4.2rem !important; 
-        }
-
-        @include media-breakpoint-down(sm) {
-            font-size: 4rem !important; 
-        }
+    @include media-breakpoint-down(sm) {
+      font-size: 4rem !important;
     }
-    
-    &__subtitle {
-        animation: fadeIn 1s ease-in-out 0.4s; 
-        animation-fill-mode: backwards; 
-    }
+  }
 
-    &__image {
-        animation: fadeIn 0.5s ease-in-out; 
-    }
+  &__subtitle {
+    animation: fadeIn 1s ease-in-out 0.4s;
+    animation-fill-mode: backwards;
+  }
 
-    &__credential {
-        animation: fadeIn 1s ease-in-out; 
-        
-        h3 {
-            display: inline-block; 
-            font-weight: 700;
-            // border-bottom: 1px solid $secondary; 
-            @include media-breakpoint-down(md) {
-                font-size: 2rem !important; 
-            }
-    
-            @include media-breakpoint-down(sm) {
-                font-size: 2rem !important; 
-            }
-        }
+  &__image {
+    animation: fadeIn 0.5s ease-in-out;
+  }
 
-        p {
-            font-weight: 300; 
-        }
+  &__credential {
+    animation: fadeIn 1s ease-in-out;
+
+    h3 {
+      display: inline-block;
+      font-weight: 700;
+      // border-bottom: 1px solid $secondary;
+      @include media-breakpoint-down(md) {
+        font-size: 2rem !important;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 2rem !important;
+      }
     }
 
-    &__food-1 {
-        animation: flyUp 0.5s ease-in-out; 
-        animation-fill-mode: backwards; 
-        animation-delay: 0.1s;     
+    p {
+      font-weight: 300;
     }
-    &__food-2 {
-        animation: flyUp 0.5s ease-in-out; 
-        animation-fill-mode: backwards;  
-        animation-delay: 0.2s;    
-    }
-    &__food-3 {
-        animation: flyUp 0.5s ease-in-out; 
-        animation-fill-mode: backwards;   
-        animation-delay: 0.3s;   
-    }
-    &__food-4 {
-        animation: flyUp 0.5s ease-in-out; 
-        animation-fill-mode: backwards;    
-        animation-delay: 0.4s;  
-    }
+  }
+
+  &__food-1 {
+    animation: flyUp 0.5s ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.1s;
+  }
+  &__food-2 {
+    animation: flyUp 0.5s ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.2s;
+  }
+  &__food-3 {
+    animation: flyUp 0.5s ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.3s;
+  }
+  &__food-4 {
+    animation: flyUp 0.5s ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.4s;
+  }
 }
 
 .bg-lion {
-    background-image: linear-gradient(rgba($white, 0.75), rgba($white, 0.75)), url("../images/blueberries.jpeg"); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: bottom left; 
-    margin-bottom: -5rem; 
-    padding-bottom: 5rem; 
+  height: 90vh;
+  width: 100vw;
+  background-image: url("../images/vegetables-background.jpg");
+  background-size: cover;
+  clip-path: ellipse(100% 55% at 48% 44%);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(0, 0, 0, 0.6);
+  }
 }
+// .bg-lion {
+//     background-image: linear-gradient(rgba($white, 0.75), rgba($white, 0.75)), url("../images/blueberries.jpeg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: bottom left;
+//     margin-bottom: -5rem;
+//     padding-bottom: 5rem;
+// }
 
 .bg-community {
-    background-image: url("../images/community-header.jpeg"); 
-    background-size: contain; 
-    background-repeat: no-repeat; 
+  background-image: url("../images/community-header.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }

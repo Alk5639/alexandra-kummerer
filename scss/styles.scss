@@ -1,19 +1,22 @@
 // Colors
-$primary: #00416A; 
-$secondary: #1560bd; 
-$info: #d0e5e7; 
-$success: #ABD9A5; 
+$primary: hsla(305, 42%, 53%, 1);
+$secondary: hsla(199, 30%, 61%, 1);
+$info: #d0e5e7;
+$success: #abd9a5;
+$added-light: hsla(203, 18%, 68%, 1);
+$dark: hsla(199, 23%, 18%, 1);
+
+$temp: #a1ca7b;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-@import "../scss/variables"; 
-@import "../scss/utilties"; 
-@import "../scss/header"; 
-@import "../scss/home"; 
-@import "../scss/community"; 
-@import "../scss/base"; 
-@import "../scss/variables"; 
-@import "../scss/navbar"; 
-@import "../scss/animations"; 
-@import "../scss/composition"; 
-
+@import "../scss/variables";
+@import "../scss/utilties";
+@import "../scss/header";
+@import "../scss/home";
+@import "../scss/community";
+@import "../scss/base";
+@import "../scss/variables";
+@import "../scss/navbar";
+@import "../scss/animations";
+@import "../scss/composition";
