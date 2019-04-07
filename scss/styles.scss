@@ -8,15 +8,16 @@ $dark: hsla(199, 23%, 18%, 1);
 
 $temp: #a1ca7b;
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import 'node_modules/bootstrap/scss/bootstrap';
 
-@import "../scss/variables";
-@import "../scss/utilties";
-@import "../scss/header";
-@import "../scss/home";
-@import "../scss/community";
-@import "../scss/base";
-@import "../scss/variables";
-@import "../scss/navbar";
-@import "../scss/animations";
-@import "../scss/composition";
+@import '../scss/variables';
+@import '../scss/utilties';
+@import '../scss/header';
+@import '../scss/home';
+@import '../scss/community';
+@import '../scss/base';
+@import '../scss/variables';
+@import '../scss/navbar';
+@import '../scss/animations';
+@import '../scss/composition';
+@import '../scss/experience';
