@@ -1,5 +1,9 @@
 .slide-container {
   min-height: 40vh;
+
+  img {
+    max-width: 300px;
+  }
 }
 
 .carousel-control-prev-icon {
