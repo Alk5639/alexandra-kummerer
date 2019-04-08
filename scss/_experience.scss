@@ -34,3 +34,13 @@
     }
   }
 }
+
+.exp-card {
+  text-decoration: none;
+  color: $secondary;
+
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+  }
+}
